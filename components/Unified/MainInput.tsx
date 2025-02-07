@@ -2,8 +2,7 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import { Textarea } from "../ui/textarea";
-import { Globe, ArrowUp } from "lucide-react";
-import { Button } from "../ui/button";
+import { ArrowUp } from "lucide-react";
 
 // Trending items data
 const trendingItems = [
@@ -55,18 +54,11 @@ const MainInput = () => {
             : "border-gray-800"
         }`}
       >
-        {/* Bottom icons with background */}
-        <div className="absolute bottom-3 left-3 z-10">
-          <div className="absolute inset-0 -z-10 bg-[#1C1C1C] w-8 h-8" />
-          <Button variant="ghost" size="icon" className="h-8 w-8">
-            <Globe className="h-5 w-5 text-gray-500" />
-          </Button>
-        </div>
+        {/* Fixed ArrowUp icon */}
         <div className="absolute bottom-3 right-3 z-10">
-          <div className="absolute inset-0 -z-10 bg-[#1C1C1C] w-8 h-8" />
-          <Button variant="ghost" size="icon" className="h-8 w-8">
+          <div className="w-8 h-8 flex items-center justify-center rounded-full cursor-pointer hover:bg-gray-800">
             <ArrowUp className="h-5 w-5 text-gray-500" />
-          </Button>
+          </div>
         </div>
 
         {/* Search input */}
@@ -88,7 +80,7 @@ const MainInput = () => {
         {/* Fade effects */}
         <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-background to-transparent z-10" />
         <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-background to-transparent z-10" />
-        
+
         {/* Scrolling container */}
         <div className="trending-scroll flex gap-2 whitespace-nowrap">
           {/* First set */}

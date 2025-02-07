@@ -126,3 +126,32 @@ textarea {
 .trending-scroll::-webkit-scrollbar {
   display: none;
 }
+
+/* Update tooltip styles */
+.tooltip-content {
+  animation-duration: 0.2s;
+  animation-timing-function: ease-out;
+  background-color: #1C1C1C !important;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1) !important;
+}
+
+.tooltip-content[data-state='delayed-open'][data-side='bottom'] {
+  animation-name: slideUpAndFade;
+}
+
+@keyframes slideUpAndFade {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Override shadcn tooltip arrow color */
+.tooltip-content::before {
+  background-color: #1C1C1C !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
