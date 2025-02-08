@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <div className="flex sticky top-0 backdrop-blur-sm z-50 border-b w-full border-foreground/10 mx-auto justify-between items-center p-4">
-      <div className="text-lg font-light">Deep-Search</div>
+      <div className="text-lg font-light">Deep-Research</div>
       <div>
         {/* <ModeToggle /> */}
         <Button
