@@ -27,7 +27,7 @@ Deep Research is an advanced AI-powered research assistant that conducts compreh
 
 ### 1. Initial Query Phase
 1. User submits an initial research query
-2. The system processes the query using GPT-4
+2. The system processes the query using GPT-4o-mini
 3. Generates relevant follow-up questions to better understand research needs
 
 ### 2. Follow-up Questions Phase
