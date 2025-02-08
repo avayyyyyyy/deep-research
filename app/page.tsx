@@ -1,12 +1,12 @@
+import ChatLayout from "@/components/ChatLayout";
 import Footer from "@/components/Unified/Footer";
 import Header from "@/components/Unified/Header";
-import MainInput from "@/components/Unified/MainInput";
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen max-w-5xl mx-auto">
       <Header />
-      <MainInput />
+      <ChatLayout />  
       <Footer />
     </div>
   );
